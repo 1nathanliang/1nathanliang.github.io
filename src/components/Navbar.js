@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, } from 'react-bootstrap';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default class NavComponent extends Component {
@@ -11,7 +11,7 @@ export default class NavComponent extends Component {
     return (
       <Navbar className='nav-custom fixed-top' expand='lg'>
         <Navbar.Brand id='brand-custom'><img src='nathanlogo.svg'
-          style={{height: '25px', width:'25px'}}/></Navbar.Brand>
+          style={{height: '25px', width:'25px'}} alt='nathan_logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
