@@ -1,0 +1,603 @@
+// Google Fonts // 
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap"); /* Google Fonts: Manrope */
+// Academicons //
+@import url("https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"); /* Academic Icons not included in Font Awesome */
+
+.App {
+  text-align: center;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+  font-size: 8pt !important;
+  color: #FFF;
+}
+
+
+.text-container {
+  color: #DDD;
+  padding: 1em;
+}
+
+.subheading {
+  font-size: 16pt;
+  padding: 10px;
+  margin-left: 3em;
+}
+
+.l1 {
+  color: #DDD;
+}
+
+.l2 {
+  color: #999;
+}
+
+.l3 {
+  color: #808080;
+}
+
+
+.loader {
+  background-color: #1b1b1b;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  -webkit-transition: opacity cubic-bezier(.4,0, .2, 1) 500ms;
+  -moz-transition: opacity cubic-bezier(.4,0, .2, 1) 500ms;
+  transition: opacity cubic-bezier(.4,0, .2, 1) 500ms;
+  z-index: 999;
+}
+
+.loader.available {
+  opacity: 0;
+}
+
+section {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+@keyframes waveform {
+  0% {
+    transform: scaleY(.5);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(.5);
+  }
+}
+
+[class*='wave'] {
+  aspect-ratio: .1;
+  animation: waveform var(--wavefreq) ease-in-out infinite forwards;
+  // background-image: linear-gradient(-13deg, #2110BA 0%, #FF05D8 100%);
+  background-image: linear-gradient(-134deg, #a5e026 0%, #35bd26 100%);
+  border-radius: 5px;
+  width: 5px;
+}
+
+:root {
+  --m: 100;
+  --wavefreq: calc(8ms * var(--m));
+}
+
+.waveform1 {
+  --wavefreq: calc(20ms * var(--m));
+}
+
+.waveform2 {
+  --wavefreq: calc(23ms * var(--m));
+}
+
+.waveform3 {
+  --wavefreq: calc(7ms * var(--m));
+}
+
+.waveform4 {
+  --wavefreq: calc(13ms * var(--m));
+}
+
+
+// Cursor Behavior //
+:not(a) {
+  cursor: url(mousecursor.cur), auto;
+}
+
+a {
+  cursor: url(mousecursor_confirm.cur), auto;
+}
+
+// Typography Specifications //
+#email-container {
+  padding: 10px 0px 15px;
+
+  code {
+    color: #57b013 !important;
+  }
+}
+
+h2 {
+  font-family: 'Manrope';
+  color: white;
+}
+
+// Toggle Name Language //
+span#my_name:hover span {
+  display: none;
+}
+
+span#my_name:hover:before {
+  content: "梁雨瀾";
+}
+
+#soc-med-container {
+  padding: 5px 0 30px;
+}
+
+#propic {
+  height: 150px;
+  width: 150px;
+  border: 7.5px solid #FFF;
+  border-radius: 50%;
+}
+
+.header-container {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Manrope';
+  font-size: 18pt;
+}
+
+.blackbox-container {
+  padding: 15px;
+  text-align: justify;
+  border-radius: 7.5px;
+  font-family: 'Manrope';
+  background-color: rgba(5, 5, 5, .5);
+}
+
+// Navbar //
+.nav-custom {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#logo-container {
+  height: 25px !important;
+  width: 25px !important; 
+  margin-left: 15px !important;
+}
+
+#brand-custom {
+  color: #353535;
+}
+
+a#about:hover {
+  color: rgba(19, 194, 75, 0.85)
+}
+
+a#research:hover {
+  color: rgba(39, 137, 207, 0.85)
+}
+
+a#projects:hover {
+  color: rgba(214, 24, 90, 0.85)
+}
+
+a#press:hover {
+  color: rgba(250, 128, 27, 0.85)
+}
+
+.pagetop {
+  color: rgba(255, 255, 255, .4) !important;
+}
+
+.pagetop:hover {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+a.animiddle
+{
+  color: rgba(255, 255, 255, .4);
+  position: relative;
+  text-decoration: none;
+}
+
+a.animiddle:hover{
+  text-decoration: none;
+}
+
+a.animiddle:before {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  border-radius: 15%;
+  bottom: 0;
+  left: 3px;
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(1,1,1,.01), rgba(0,0,0,1));
+  background-color: #AAA;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+
+a.animiddle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+// Bio //
+.bc-link {
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: #b99b73;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #b99b73;
+    filter: drop-shadow(0 0 5px rgba(138, 107, 70, .75));
+  }
+}
+
+.mit-link {
+  a:active,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #dc475f;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #dc475f;
+    filter: drop-shadow(0 0 5px rgba(163, 31, 52, .75));
+  }
+}
+
+.princeton-link {
+  a:active,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #f78e2a;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #f78e2a;
+    filter: drop-shadow(0 0 5px rgba(222, 112, 8, .75));
+  }
+}
+
+.duke-link {
+  a:active,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #1291ff;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #1291ff;
+    filter: drop-shadow(0 0 5px rgba(0, 83, 155, .85));
+  }
+}
+
+
+// Social Media Icons //
+.soc-med {
+  color: #a0a0a0;
+  font-size: 14pt;
+  padding: 0px 10px 5px;
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+}
+
+a#github:active,
+a#github:hover {
+  color: #8361c1;
+  filter: drop-shadow(0 0 5px rgba(103, 73, 186, .9));
+}
+
+a#gscholar:active,
+a#gscholar:hover {
+  color: #767cea;
+  filter: drop-shadow(0 0 5px rgba(91, 91, 215, .9));
+}
+
+a#orcid:active,
+a#orcid:hover {
+  color: #A6CE39;
+  filter: drop-shadow(0 0 5px rgba(170, 207, 73, .9));
+}
+
+a#researchgate:active,
+a#researchgate:hover {
+  color: #0AC7BF;
+  filter: drop-shadow(0 0 5px rgba(128, 220, 212, .7));
+}
+
+a#linkedin:active,
+a#linkedin:hover {
+  color: #2867b2;
+  filter: drop-shadow(0 0 5px rgba(77, 122, 176, 0.7));
+}
+
+a#twitter:active,
+a#twitter:hover {
+  color: #1DA1F2;
+  filter: drop-shadow(0 0 5px rgba(29, 202, 255, .7));
+}
+
+a#mastodon:active,
+a#mastodon:hover {
+  color: #6364ff;
+  filter: drop-shadow(0 0 5px rgba(146, 147, 255, .7));
+}
+
+a#psychtree:active,
+a#psychtree:hover {
+  color: #32CD32;
+  filter: drop-shadow(0 0 5px rgba(50, 205, 50, .9));
+}
+
+a#spotify:active,
+a#spotify:hover {
+  color: #1DB954;
+  filter: drop-shadow(0 0 5px rgba(140, 255, 102, .7));
+}
+
+a#philpeople:active,
+a#philpeople:hover {
+  color: #325a91;
+  filter: drop-shadow(0 0 5px rgb(11, 35, 77));
+}
+
+a#ssrn:active,
+a#ssrn:hover {
+  color: #395884;
+  filter: drop-shadow(0 0 5px rgba(95, 118, 150, .7));
+}
+
+a#soundcloud:active,
+a#soundcloud:hover {
+  color: #FF5836;
+  filter: drop-shadow(0 0 5px rgb(100, 43, 21));
+}
+
+a#osf:active,
+a#osf:hover {
+  color: #3DB9EB;
+  filter: drop-shadow(0 0 5px rgba(84, 183, 222, .7));
+}
+
+a#academia:active,
+a#academia:hover {
+  color: #AAAAAA;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, .7));
+}
+
+a#yelp:active,
+a#yelp:hover {
+  color: #c41200;
+  filter: drop-shadow(0 0 5px rgba(235, 64, 52, .7));
+}
+
+a#stackoverflow:active,
+a#stackoverflow:hover {
+  color: rgb(244, 127, 36);
+  filter: drop-shadow(0 0 5px rgba(244, 127, 36, .7));
+}
+
+
+// Publications //
+.btn-container {
+  margin-left: 50px;
+}
+
+.bib-btn {
+  background-color: rgb(0, 128, 128) !important;
+  margin: 10px 5px !important;
+  border: 2px solid #fff !important;
+
+  code {
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+  }
+}
+
+.bib-btn:hover {
+  background-color: rgba(0, 128, 128, 0.75) !important;
+}
+
+.doi-btn {
+  background-color: rgb(252, 189, 63) !important;
+  margin: 10px 5px !important;
+  border: 2px solid #fff !important;
+
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+  }
+}
+
+.doi-btn:hover {
+  background-color: rgba(252, 189, 63, 0.75) !important;
+}
+
+
+.osf-btn {
+  background-color: rgb(51, 122, 183) !important;
+  margin: 10px 5px !important;
+  border: 2px solid #fff !important;
+
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+  }
+}
+
+.osf-btn:hover {
+  background-color: rgba(51, 122, 183, 0.75) !important;
+}
+
+
+.rx-btn {
+  background-color: rgb(190, 55, 62) !important;
+  margin: 10px 5px !important;
+  border: 2px solid #fff !important;
+
+  a {
+    color: white !important;
+    text-decoration: none !important; 
+    font-weight: bold;
+  }
+}
+
+.rx-btn:hover {
+  background-color: rgba(190, 55, 62, 0.75) !important;
+}
+
+
+.ft-btn {
+  background-color: rgb(192, 189, 184) !important;
+  margin: 10px 5px !important;
+  border: 2px solid #fff !important;
+
+  a {
+    color: rgb(45, 45, 45) !important;
+    text-decoration: none !important; 
+    font-weight: bold;
+  }
+}
+
+.ft-btn:hover {
+  background-color: rgba(140, 140, 140, 0.75) !important;
+  a {
+    color: #fff !important;
+  }
+}
+
+.download-btn {
+  margin: 0px 10px 0px !important;
+}
+
+
+ol {
+  padding-left: 2em;
+  padding-right: 2em;
+  li {
+    padding-left: inherit;
+    padding-right: inherit;
+    color: #DDD;
+  }
+}
+
+// Projects //
+a.regprojtext {
+  color: rgb(247, 77, 134);
+}
+
+.regprojtext:link,
+.regprojtext:visited,
+.regprojtext:hover,
+.regprojtext:active {
+  text-decoration: none;
+  color: rgb(247, 77, 134);
+}
+
+a.regprojtext:hover {
+  filter: drop-shadow(0 0 5px rgba(247, 77, 179, .75));
+}
+
+
+// Press //
+a.regpresstext {
+  color: rgb(240, 132, 24);
+}
+
+a.regpresstext:link {
+  text-decoration: none;
+  color: rgb(240, 132, 24);
+}
+
+a.regpresstext:visited {
+  text-decoration: none;
+  color: rgb(240, 132, 24);
+}
+
+a.regpresstext:hover {
+  text-decoration: none;
+  color: rgb(240, 132, 24);
+  filter: drop-shadow(0 0 5px rgba(240, 157, 24, .75));
+}
+
+a.regpresstext:active {
+  text-decoration: none;
+  color: rgb(240, 132, 24);
+}
+
+// CV //
+#cv-pdf {
+  text-align: center;
+  overflow: hidden;
+}
+
+#circle-frame {
+	width: 270px;
+	height: 360px;
+	-moz-border-radius: 2% / 1.5%;
+	-webkit-border-radius: 2% / 1.5%;
+	border-radius: 2% / 1.5%;
+	overflow: hidden;
+	position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+// Footer //
+.footer-container {
+  background-color: rgba(0, 0, 0, .75);
+  text-align: center;
+  padding-top: 25px !important;
+  
+  p {
+    color: #5a5a5a;
+    font-size: 10pt;
+  }
+
+  #fa-heart {
+    color: #ff3377;
+  }
+
+  #react-logo {
+    color: #61DBFB;
+    font-size: 8pt;
+  }
+
+  #bootstrap-logo {
+    color: #563d7c;
+    font-size: 8pt;
+  }
+}
