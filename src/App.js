@@ -51,30 +51,19 @@ export default class App extends Component {
 
   Intro = () => {
     return (
-      <div style={{
-        paddingTop: '100px'
-      }}>
+      <div id="intro-container">
         <img
           alt='nathanliang_headshot'
           id='propic'
           src={'./nathanliang_headshot.jpg'}
         />
-        <div style={{
-          lineHeight: '75%',
-          paddingTop: '25px'
-        }}>
-          <h2 style={{
-            opacity: '.9',
-            fontSize: '36px',
-          }}>
-            <span id="my_name"><span>nathan liang</span></span>
+        <div id="intro-container-2">
+          <h2>
+            <span id="my-name"><span>nathan liang</span></span>
             <sup><a href="https://translate.google.com/?ui=tob&sl=zh-CN&tl=en&text=%E6%A2%81" target="_blank" rel="noreferrer" style={{fontSize: '8px', textDecoration: 'none', color: 'white'}}>[?]</a></sup> 
             <sub><a href="https://www.npr.org/2021/06/02/996319297/gender-identity-pronouns-expression-guide-lgbtq" target="_blank" rel="noreferrer" style={{fontSize: '12px', textDecoration: 'none', color: 'white'}}>(he/him/his)</a></sub>
           </h2>
-          <h2 style={{
-            opacity: '.75',
-            fontSize: '28px',
-          }}>moral psych @ BC + MiT</h2>
+          <h3>moral psych @ BC + MiT</h3>
         </div>
       </div>
     )

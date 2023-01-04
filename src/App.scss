@@ -123,6 +123,15 @@ a {
   cursor: url(mousecursor_confirm.cur), auto;
 }
 
+#intro-container {
+  padding-top: 100px;
+}
+
+#intro-container-2 {
+  line-height: 75%;
+  padding-top: 25px;
+}
+
 // Typography Specifications //
 #email-container {
   padding: 10px 0px 15px;
@@ -132,17 +141,27 @@ a {
   }
 }
 
-h2 {
+h2, h3 {
   font-family: 'Manrope';
   color: white;
 }
 
+h2 {
+  opacity: .9;
+  font-size: 36px;
+}
+
+h3 {
+  opacity: .75;
+  font-size: 28px;
+}
+
 // Toggle Name Language //
-span#my_name:hover span {
+span#my-name:hover span {
   display: none;
 }
 
-span#my_name:hover:before {
+span#my-name:hover:before {
   content: "梁雨瀾";
 }
 

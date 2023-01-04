@@ -10,7 +10,8 @@ const FooterPage = () => {
     <Navbar className='footer-container justify-content-center' expand='lg'>
       <Nav>
         <p>
-          Last updated {month} {new Date().getDate()}, {new Date().getFullYear()}
+          {/* Last updated {month} {new Date().getDate()}, {new Date().getFullYear()} */}
+          Last updated {months[0]} 3, 2023
           <br />•&nbsp;•&nbsp;•
           <br />
             <strong>
