@@ -86,7 +86,7 @@ export default class ResearchComponent extends Component {
                 <ol>
                   <li>Murray, S., <strong>Liang, N.</strong>, Brosowsky, N., & Seli, P. (2021). What are the benefits of mind wandering to creativity? <em>Psychology of Aesthetics, Creativity, and the Arts</em>.</li>
                   <span className="btn-container">
-                    {siteButton("ft-btn", <FontAwesomeIcon icon='file-pdf' size="sm" />, "https://github.com/1nathanliang.github.io/files/papers/murray2021benefits.pdf", "full-text pdf")}
+                    {siteButton("ft-btn", <FontAwesomeIcon icon='file-pdf' size="sm" />, "https://github.com/1nathanliang/1nathanliang.github.io/blob/main/files/papers/murray2021benefits.pdf", "full-text pdf")}
                     {siteButton("doi-btn", <i class="ai ai-doi ai-sm"/>, "https://doi.org/10.1037/aca0000420", "doi")}
                     {siteButton("osf-btn", <i class="ai ai-osf ai-sm"/>, "https://osf.io/6jtch", "code + data")}
                     <Bibtex>
@@ -98,7 +98,7 @@ export default class ResearchComponent extends Component {
 
                   <li>Hard, B. M., <strong>Liang, N.</strong>, Wong, M., &  Flusberg, S. J. (2021). Metaphors we teach by: Uncovering the structure of metaphorical lay theories of teaching. <em>Metaphor and the Social World</em>.</li>
                   <span className="btn-container">
-                    {siteButton("ft-btn", <FontAwesomeIcon icon='file-pdf' size="sm" />, "https://github.com/1nathanliang.github.io/files/papers/hard2021metaphors.pdf", "full-text pdf")}
+                    {siteButton("ft-btn", <FontAwesomeIcon icon='file-pdf' size="sm" />, "https://github.com/1nathanliang/1nathanliang.github.io/blob/main/files/papers/hard2021metaphors.pdf", "full-text pdf")}
                     {siteButton("doi-btn", <i class="ai ai-doi ai-sm"/>, "https://doi.org/10.1075/msw.19021.har", "doi")}
                     {siteButton("osf-btn", <i class="ai ai-osf ai-sm"/>, "https://osf.io/6jtch", "code + data")}
                     <Bibtex>
