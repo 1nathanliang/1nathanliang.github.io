@@ -4,14 +4,12 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 const FooterPage = () => {
   const months = ["☃️ January", "💘 February", "☘️ March", "🐣 April", "🌸 May", "🌅 June", "🌄 July", "🌾 August", "🍁 September", "🎃 October", "🦃 November", "🎄 December"];
-  const d = new Date();
-  let month = months[d.getMonth()]
   return (
     <Navbar className='footer-container justify-content-center' expand='lg'>
       <Nav>
         <p>
           {/* Last updated {month} {new Date().getDate()}, {new Date().getFullYear()} */}
-          Last updated {months[0]} 3, 2023
+          Last updated {months[8]} 12, 2023
           <br />•&nbsp;•&nbsp;•
           <br />
             <strong>

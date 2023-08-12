@@ -11,7 +11,7 @@ export default class NavComponent extends Component {
     return (
       <Navbar collapseOnSelect variant="dark" className="nav-custom fixed-top" expand="md">
         <Navbar.Brand id="brand-custom">
-          <img src="nathanlogo.svg" alt="Nathan Liang personal logo design" id="logo-container"/>
+          <img src="nathan-logo.svg" alt="Nathan Liang personal logo design" id="logo-container"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

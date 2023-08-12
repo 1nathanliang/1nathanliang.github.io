@@ -15,20 +15,22 @@ export default class AboutComponent extends Component {
             <Row>
               <Col xl={9}>    
                 <div className="text-container">
-                  I'm <strong>field experiment coordinator</strong> in the 🦅 
+
+                  Hey! I'm a <strong>1st-year psychology Ph.D. student</strong> at Cornell supervised by Professor Laura Niemi in the Applied Moral Psychology Lab. 
+                  Previously, I was employed as a project manager in the 🦅 
                   <span className="bc-link"><a href="https://moralitylab.bc.edu/" target="_blank" rel="noreferrer"><strong> Morality Lab (Professor Liane Young) </strong></a></span>
-                  and the 
+                  and 
                   <span className="bc-link"><a href="https://sites.bc.edu/sisclab/" target="_blank" rel="noreferrer"><strong> Social Influence and Social Change Lab (Professor Gregg R. Sparkman) </strong></a></span>
-                  across both the Department of Psychology and Neuroscience and the Schiller Institute for Integrated Science and Society at Boston College. 
+                  in the Department of Psychology and Neuroscience at Boston College. 
                   
                   I work concurrently as a research coordinator for the
-                  <span className="mit-link"><a href="https://cooperation.mit.edu/" target="_blank" rel="noreferrer"><strong> MiT Applied Cooperation Team (Professor David Rand & Dr. Erez Yoeli)</strong></a></span>.<br/><br/>
+                  <span className="mit-link"><a href="https://cooperation.mit.edu/" target="_blank" rel="noreferrer"><strong> MiT Applied Cooperation Initiative (Professor David Rand & Dr. Erez Yoeli)</strong></a></span>.<br/><br/>
                   
                   Previously, I was a lab manager and research specialist in the 🐅 
                   <span className="princeton-link"><a href="https://psnlab.princeton.edu/" target="_blank" rel="noreferrer"><strong> Princeton Social Neuroscience Lab (Professor Diana I. Tamir) </strong></a></span>
                   working across the Princeton Neuroscience Institute and Department of Psychology at Princeton University.<br/><br/>
                   
-                  I received my B.S. in psychology and minor in philosophy from Duke University in 2020, graduating early—after closing my laptop at the end of my final Zoom class during the pandemic.
+                  I received my B.S. in psychology and minor in philosophy from Duke University in 2020, graduating early during the pandemic.
                   I primarily worked as a research assistant in the 🧢 
                   <span className="duke-link"><a href="https://www.mindatlargelab.com/"><strong> Mind at Large Lab (Professor Paul Seli) </strong></a></span>
                   and as a postgraduate research fellow in the 
